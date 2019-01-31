@@ -1,4 +1,4 @@
-package sda.powtorka.tydzien1.reverseStrings;
+package sda.powtorka.tydzien1.reversewords;
 
 public class ReverseWords {
     public void reverseMyStrings(String str) {
