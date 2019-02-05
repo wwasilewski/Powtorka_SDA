@@ -1,4 +1,4 @@
-package sda.powtorka.tydzien2.stingbuilder;
+package sda.powtorka.tydzien2.stringbuilder;
 
 public class StringBuilderEx2 {
     public static void main(String[] args) {
@@ -36,5 +36,16 @@ public class StringBuilderEx2 {
 
         //reverse
         System.out.println("reversed String: " + sb.reverse());
+
+        //String formatting
+        String name = "Wojciech";
+        String surname = "Wojciechowski";
+        int age = 33;
+        float height = 186.5f;
+        double temp = 27.34d;
+        String dName = String.format("%s %s age: %d, height: %.2f, today's temp %+.3f", name, surname, age, height, temp);
+        System.out.println(dName);
+
+        System.out.printf("My name is: %s", "Wojciech");
     }
 }

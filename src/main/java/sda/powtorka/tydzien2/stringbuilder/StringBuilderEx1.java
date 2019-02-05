@@ -1,6 +1,6 @@
 //Uzywac StringBuildera zeby nie tworzyc duzej ilosci Stringow
 
-package sda.powtorka.tydzien2.stingbuilder;
+package sda.powtorka.tydzien2.stringbuilder;
 
 public class StringBuilderEx1 {
     public static void main(String[] args) {
