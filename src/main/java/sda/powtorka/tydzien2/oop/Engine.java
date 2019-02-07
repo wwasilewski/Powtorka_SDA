@@ -1,4 +1,4 @@
-package sda.powtorka.tydzien2.OOP;
+package sda.powtorka.tydzien2.oop;
 
 public class Engine {
 

@@ -1,4 +1,4 @@
-package sda.powtorka.tydzien2.OOP.zad37;
+package sda.powtorka.tydzien2.oop.zad37;
 
 public class Square extends Figure {
     private double side;

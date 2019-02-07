@@ -1,4 +1,4 @@
-package sda.powtorka.tydzien2.OOP.zad37;
+package sda.powtorka.tydzien2.oop.zad37;
 
 import java.util.ArrayList;
 import java.util.List;

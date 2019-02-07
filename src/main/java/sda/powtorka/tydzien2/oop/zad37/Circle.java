@@ -1,4 +1,4 @@
-package sda.powtorka.tydzien2.OOP.zad37;
+package sda.powtorka.tydzien2.oop.zad37;
 
 public class Circle extends Figure {
     private double radius;
