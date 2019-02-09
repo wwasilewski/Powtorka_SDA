@@ -1,4 +1,4 @@
-package sda.powtorka.tydzien2.oop;
+package sda.powtorka.tydzien2.oop.zad_od16do36;
 
 public class SportCar extends Car {
 
