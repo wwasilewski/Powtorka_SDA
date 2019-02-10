@@ -6,7 +6,7 @@
 
 package sda.powtorka.tydzien2.rozne.zad39;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -16,17 +16,28 @@ public class Main {
         Zad39 zad39 = new Zad39();
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("podaj liczby do operacji (zero konczy wprowadzanie): ");
+        System.out.print("podaj liczby do operacji (zero konczy wprowadzanie): ");
+        float liczba;
+        boolean czyZero = true;
 
+        List<Float> listaLiczb = new ArrayList<>();
 
-        List<Float> listaLiczb = Arrays.asList(1f, 2f, 3f, 4f, 5f);
-        Float[] lista = listaLiczb.toArray(new Float[listaLiczb.size()]);
-
-        System.out.println(zad39.najmniejsza(lista));
-        System.out.println(zad39.najwieksza(lista));
-        System.out.println(zad39.sumaLiczb(lista));
-        zad39.wypisz(lista);
-
+        while (czyZero) {
+            try {
+                liczba = Float.parseFloat(sc.nextLine());
+                if (0 != liczba) {
+                    listaLiczb.add(liczba);
+                    System.out.print("podaj kolejna liczbe: ");
+                } else {
+                    System.out.println("koniec podawania liczb bo podales 0");
+                    Float[] lista = listaLiczb.toArray(new Float[listaLiczb.size()]);
+                    zad39.wypisz(lista);
+                    break;
+                }
+            } catch (NumberFormatException e) {
+                System.out.print("niepoprawne dane, wprowadz ponownie: ");
+            }
+        }
         sc.close();
     }
 }

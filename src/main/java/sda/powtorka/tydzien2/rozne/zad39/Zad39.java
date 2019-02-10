@@ -38,6 +38,9 @@ public class Zad39 {
     }
 
     public void wypisz(Float... liczba) {
-        System.out.println(Arrays.toString(liczba));
+        System.out.println("podane liczby to: " + Arrays.toString(liczba));
+        System.out.println("suma liczb to: " + sumaLiczb(liczba));
+        System.out.println("najmniejsza liczba to: " + najmniejsza(liczba));
+        System.out.println("najwieksza liczba to: " + najwieksza(liczba));
     }
 }
