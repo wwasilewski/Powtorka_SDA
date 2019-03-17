@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 public class Zad3 {
     public Boolean sprawdzLogin(String login) {
-        Pattern pattern = Pattern.compile("[a-zA-Z0-9]{8,16}");
+        Pattern pattern = Pattern.compile("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,16}$");
         Boolean bool = pattern.matcher(login).matches();
         return bool;
     }
