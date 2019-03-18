@@ -5,7 +5,6 @@
 
 package sda.powtorka.tydzien3.wyrazeniaregularne;
 
-
 import org.junit.Assert;
 import org.junit.Test;
 
