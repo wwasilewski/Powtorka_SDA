@@ -1,4 +1,4 @@
-package sda.powtorka.tydzien3.watki.przyklad2;
+package sda.powtorka.tydzien3.watki.przyklad2thread;
 
 /**
  * @author Wojciech Wasilewski

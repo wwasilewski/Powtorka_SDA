@@ -1,15 +1,15 @@
-package sda.powtorka.tydzien3.watki.przyklad4;
+package sda.powtorka.tydzien3.watki.przyklad3wielewatkow;
 
 /**
  * @author Wojciech Wasilewski
  * @date Created on 20.03.2019
  */
-public class NowyWatekIsAlive implements Runnable {
+public class NowyWatek implements Runnable {
 
     String nazwa;
     Thread t;
 
-    public NowyWatekIsAlive(String nazwaWatku) {
+    public NowyWatek(String nazwaWatku) {
         nazwa = nazwaWatku;
         t = new Thread(this, nazwa);
         System.out.println("nowy watek: " + t);
@@ -18,7 +18,7 @@ public class NowyWatekIsAlive implements Runnable {
 
     public void run() {
         try {
-            for (int i = 6; i >= 0; i--) {
+            for (int i = 5; i >= 0; i--) {
                 System.out.println(nazwa + ": " + i);
                 t.sleep(1000);
             }
