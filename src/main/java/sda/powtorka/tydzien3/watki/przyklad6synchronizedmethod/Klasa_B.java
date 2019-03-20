@@ -1,4 +1,4 @@
-package sda.powtorka.tydzien3.watki.przyklad6synchronized;
+package sda.powtorka.tydzien3.watki.przyklad6synchronizedmethod;
 
 /**
  * @author Wojciech Wasilewski
